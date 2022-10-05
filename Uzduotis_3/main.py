@@ -11,3 +11,10 @@ audi = {
   "year": 2005,
   "color": 'white',
 }
+
+def get_dict_values(audi):
+  for c in audi:
+    print(audi[c])
+get_dict_values(audi)
+
+

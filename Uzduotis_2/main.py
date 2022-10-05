@@ -16,13 +16,33 @@ import pprint
 # pvz. ['Alex John', 'Ann Smith', ...].
 
 users = [
-  { 'id': '1', 'name': 'John Smith', 'age': 20 },
-  { 'id': '2', 'name': 'Ann Smith', 'age': 24 },
-  { 'id': '3', 'name': 'Tom Jones', 'age': 31 },
-  { 'id': '4', 'name': 'Rose Peterson', 'age': 17 },
-  { 'id': '5', 'name': 'Alex John', 'age': 25 },
-  { 'id': '6', 'name': 'Ronald Jones', 'age': 63 },
-  { 'id': '7', 'name': 'Elton Smith', 'age': 16 },
-  { 'id': '8', 'name': 'Simon Peterson', 'age': 30 },
-  { 'id': '9', 'name': 'Daniel Cane', 'age': 51 },
+  { 'id': '1', 'name': 'John Smith', 'age': 20},
+  { 'id': '2', 'name': 'Ann Smith', 'age': 24},
+  { 'id': '3', 'name': 'Tom Jones', 'age': 31},
+  { 'id': '4', 'name': 'Rose Peterson', 'age': 17},
+  { 'id': '5', 'name': 'Alex John', 'age': 25},
+  { 'id': '6', 'name': 'Ronald Jones', 'age': 63},
+  { 'id': '7', 'name': 'Elton Smith', 'age': 16},
+  { 'id': '8', 'name': 'Simon Peterson', 'age': 30},
+  { 'id': '9', 'name': 'Daniel Cane', 'age': 51},
 ]
+
+# 1
+def get_user_average_age(numbers):
+  age = []
+  average = 0
+  for num in numbers:
+      age.append(num['age'])
+      average+=1
+  return print(round(sum(age)/average))
+get_user_average_age(users)
+
+
+# 2
+def get_users_names(user_names):
+  sorted_names = []
+  for name in user_names:
+    sorted_names.append(name['name'])
+    sorted_names.sort()
+  return print(sorted_names)
+get_users_names(users)
