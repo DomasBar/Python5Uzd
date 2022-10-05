@@ -26,16 +26,13 @@ class Movie:
     def __repr__(self):
         return f"{self.title}, {self.director}, {self.budget}"
 
-    def was_expensive(self, budget):
-        self.budget = budget
-        if budget > 100000000:
-            return True
-        else:
-            return False
+    def was_expensive(self):
+            return(print(self.budget >100000000))
 
 
-Movie1 = Movie("Įdomus title", "Įdomusis", 150000000)
-Movie2 = Movie("Kita dalis", "Įdomusis", 1)
-print(Movie.was_expensive(Movie1, 150000000))
-print(Movie.was_expensive(Movie2, 1))
+movie1 = Movie("Įdomus title", "Įdomusis", 150000000)
+movie2 = Movie("Kita dalis", "Įdomusis", 1)
+movie1.was_expensive()
+movie2.was_expensive()
+
 
