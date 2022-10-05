@@ -46,27 +46,3 @@ filter_underaged_owners(users)
 
 
 
-
-
-
-
-# def filter_all_or_nothing_people(user):
-#     if user["hasDog"] == True and user["hasCat"] == True:
-#         return user
-#     else:
-#         pass
-# filtered_user = filter(filter_all_or_nothing_people, users)
-# for u in filtered_user:
-#     print(dict(u)["name"])
-#
-#
-# def filter_all_or_nothing_people():
-#     filtered = list(filter(lambda user: user['hasDog'] == True and user["hasCat"] == True, users))
-#     print(filtered)
-# filter_all_or_nothing_people()
-
-
-
-
-
-
